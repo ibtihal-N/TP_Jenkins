@@ -40,7 +40,7 @@ pipeline {
                 script {
                     // Lancer un conteneur à partir de l'image Docker construite et publiée
                     sh """
-                    docker run -d --name my_container -p 8080:80 ${registry}:$BUILD_NUMBER
+                    docker run -d --name my_container -p 8081:80 ${registry}:$BUILD_NUMBER
                     """
                 }
             }
